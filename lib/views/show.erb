@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Afficher un potin</title>
+  </head>
+  <body>
+    <h1>Voici les détails du potin :</h1>
+
+    <p>
+      <strong>Auteur :</strong> <%= gossip.author %><br/>       <!-- <%= gossip.author %> et <%= gossip.content %> affichent les détails du gossip récupéré par la méthode find -->
+      <strong>Potin :</strong> <%= gossip.content %>
+    </p>
+
+    <a href="/">Retour à la page d'accueil</a>
+  </body>
+</html>
+

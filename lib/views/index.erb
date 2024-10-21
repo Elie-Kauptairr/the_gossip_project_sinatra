@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur mon super site de gossip !</h1>
+
+    <% gossips.each_with_index do |gossip, index| %>
+      <p>
+        <strong>Auteur :</strong> <%= gossip.author %><br/>    
+        <strong>Potin :</strong> <%= gossip.content %><br/>    
+        <a href="/gossips/<%= index + 1 %>">Voir ce potin</a>
+      </p>
+    <% end %>
+  </body>
+</html>
+
+
+<%# each_with_index : Utilise cette méthode pour obtenir l'index de chaque gossip. %>
+<%# href="/gossips/<%= index + 1 %>" : Crée un lien vers la page du gossip spécifique en utilisant son ID (l'index + 1 %>
